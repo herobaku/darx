@@ -93,7 +93,7 @@ nav {
     position: relative;
 }
 h2 {
-    padding: 40px 0;
+    padding: 20px 0;
 }
 .quote::after, .quote::before {
     content: "";
@@ -111,6 +111,28 @@ h2 {
 }
 .quote i {
     font-size: 1.5em;
+}
+
+.icons {
+    display: inline-grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 40px;
+}
+
+.icons a {
+    width: 105px;
+    height: 105px;
+    color: #fff;
+    background: #1f1f21;
+    border-radius: 50%;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    box-shadow: 0 0 8px 3px #111;
+}
+
+.icons a i {
+    font-size: 3.9em;
 }
 
 @media only screen and (min-width: 768px) {
@@ -155,7 +177,7 @@ h2 {
         background: var(--blue);
     }
     #gallery {
-        padding: 46px 0 0 0;
+        padding: 46px 0 73px 0;
     }
     .post {
         grid-template-columns: 1fr 1fr 1fr 1fr;

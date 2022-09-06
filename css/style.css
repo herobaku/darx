@@ -53,7 +53,7 @@ nav {
     padding: 16px 0 0 0;
 }
 
-.bg-main { background: var(--grey); }
+.bg-main { background: var(--grey); padding: 46px 0 33px 0;}
 
 .post {
     display: grid;
@@ -116,12 +116,12 @@ h2 {
 .icons {
     display: inline-grid;
     grid-template-columns: repeat(7, 1fr);
-    gap: 40px;
+    gap: 10px;
 }
 
 .icons a {
-    width: 105px;
-    height: 105px;
+    width: 40px;
+    height: 40px;
     color: #fff;
     background: #1f1f21;
     border-radius: 50%;
@@ -132,8 +132,27 @@ h2 {
 }
 
 .icons a i {
-    font-size: 3.9em;
+    font-size: 1em;
 }
+
+.icons-social {
+    padding-top: 40px;
+    text-align: center;
+}
+
+/* Footer */
+.bg-footer {
+    background: var(--blue);
+}
+
+#footer-nav, #menu-footer {
+    display: grid;
+}
+#menu-footer li a, #footer-nav p {
+    font: .8em Museo Moderno;
+    color: var(--white);
+}
+/* End */
 
 @media only screen and (min-width: 768px) {
     .container {
@@ -176,9 +195,6 @@ h2 {
     .active, #menu>ul>li>a:hover {
         background: var(--blue);
     }
-    #gallery {
-        padding: 46px 0 73px 0;
-    }
     .post {
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-template-rows: 212px 212px 212px 212px 212px;
@@ -197,5 +213,35 @@ h2 {
     }
     h2 {
         padding: 0;
+    }
+    .icons {
+        display: inline-grid;
+        grid-template-columns: repeat(7, 1fr);
+        gap: 40px;
+    }
+    
+    .icons a {
+        width: 105px;
+        height: 105px;
+        color: #fff;
+        background: #1f1f21;
+        border-radius: 50%;
+        display: grid;
+        justify-content: center;
+        align-content: center;
+        box-shadow: 0 0 8px 3px #111;
+    }
+    
+    .icons a i {
+        font-size: 3.9em;
+    }
+    #footer-nav {
+        justify-content: space-between;
+        grid-template-columns: repeat(2, auto);
+        align-items: center;
+    }
+    #menu-footer {
+        grid-template-columns: repeat(4, auto);
+        gap: 10px;
     }
 }
